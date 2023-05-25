@@ -441,6 +441,7 @@ margin-bottom: 2rem;
 font-size: 2rem;
 color: #333;
 }
+
 /*gallery section starts*/
 .gallery .box-container{
   display: flex;
@@ -449,7 +450,7 @@ color: #333;
 }
 .gallery .box-container .box{
   flex: 1 1 30rem;
-  border-radius: 2rem;
+  /* border-radius: 2rem; */
   overflow: hidden;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
 }
@@ -511,6 +512,10 @@ starts*/
   padding: 2rem;
   border-radius: 50%; 
 }
+.footer .box-container .box .social-media a:hover{
+    color:#eee;
+    background: rgb(226, 245, 255);
+}
 .footer .box-container .box p{
   font-size: 2rem;
   color: #fff;
@@ -521,6 +526,6 @@ starts*/
   color:var(--main-color);
 }
 .footer .box-container .box a:hover{
-   color: blue;
-   text-decoration: underline;  
+   color: rgb(55, 101, 255);
+   
 }
