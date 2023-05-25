@@ -193,3 +193,200 @@ body {
   padding: 0.5rem 1.2rem;
   display: none;
 }
+/* media Query*/
+@media (max-width: 12000px) {
+  html {
+    font-size: 55%;
+  }
+  section {
+    padding: 1rem;
+  }
+}
+@media (max-width: 991px) {
+  header {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .video-container {
+    display: none;
+  }
+  .home .controls {
+    display: none;
+  }
+  .home .content h3 {
+    font-size: 0.1rem;
+    margin: 3rem;
+    color: #000;
+  }
+  .home .content p {
+    text-shadow: none;
+    margin: 3rem;
+    color: #000;
+  }
+  body {
+    background: 
+      url("/images/background.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+  }
+  #menu-bar {
+    display: initial;
+  }
+  section {
+    padding: 2rem;
+  }
+  header .navbar {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    background: bisque;
+    border-top: 0.5rem solid rgb(149, 131, 108);
+    padding: 1rem 2rem;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+  header .navbar.active {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+  header .navbar a {
+    display: block;
+    border-radius: 0.5rem;
+    padding: 0.1rem;
+    margin: 1rem;
+    background: rgb(244, 204, 156);
+  }
+ .packages .package-grid{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+ }
+ .packages h3{
+  text-align: center;
+  font-size: 1rem;
+
+}
+
+.book .row img {
+ width: 10rem;
+}
+.book .row form {
+width: 10rem;
+}
+}
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+  .book .row img {
+ width: 10rem;
+}
+.book .row form {
+width: 10rem;
+
+}
+
+}
+.home {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  position: relative;
+  z-index: 0;
+}
+.home .content {
+  text-align: center;
+}
+.home .content h3 {
+  font-size: 4.5rem;
+  color: var(--Primary-color);
+  text-transform: uppercase;
+  text-shadow: 0 0.3rem 0.5rem rgb(176, 156, 131);
+}
+.home .content p {
+  font-size: 2.5rem;
+  color: var(--Primary-color);
+  padding: 0.5rem 0;
+}
+.home .video-container {
+  position: absolute;
+  z-index: -1;
+  height: auto;
+  width: 100%;
+  object-fit: cover;
+}
+.home .controls {
+  padding: 1rem;
+  border-radius: 5rem;
+  background: rgb(0, 0, 0.7);
+  position: relative;
+  top: 10rem;
+}
+.home .controls .vid-btn {
+  height: 2rem;
+  width: 2rem;
+  display: inline-block;
+  border-radius: 50%;
+  background: var(--Primary-color);
+  cursor: pointer;
+  margin: 0.5rem;
+}
+.home .controls .vid-btn.active {
+  background: var(--main-color);
+}
+/*-----------------book Section-----------------*/
+.heading {
+  text-align: center;
+  padding: 2.5rem 0;
+  margin-top: 25rem;
+}
+.heading span {
+  font-size: 3.5rem;
+  background: rgb(236, 226, 212);
+  color: var(--main-color);
+  border-radius: 0.5rem;
+  padding: 0.2rem 1rem;
+}
+.heading span.space {
+  background: none;
+}
+.heading span {
+  font-size: 2.5rem;
+}
+.book .row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4.5rem;
+}
+.book .row .image {
+  flex: 1 1 40rem;
+}
+.book .row img {
+  width: 100%; 
+  border-radius: 2rem;
+}
+.book .row form {
+  flex: 1 1 40rem;
+  padding: 1rem;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.6);
+  border-radius: 2rem;
+}
+.book .row form .inputbox {
+  padding: 0.5rem 0;
+}
+.book .row form .inputbox input {
+  width: 100%;
+  padding: 1rem;
+  border: 0.1rem solid rgba(0, 0, 0, 0.1);
+  color: #333;
+  font-size: 1.5rem;
+  text-transform: none;
+}
+.book .row form .inputbox h3 {
+  font-size: 2rem;
+  padding: 1rem 0;
