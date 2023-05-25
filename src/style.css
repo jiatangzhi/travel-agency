@@ -49,7 +49,7 @@ header {
   top: 0;
   left: 0;
   right: 0;
-  background: bisque;
+  background:  rgb(196, 241, 255);
   z-index: 1000;
   display: flex;
   align-items: center;
@@ -88,9 +88,9 @@ header .search-bar-container {
   top: 100%;
   left: 0;
   right: 0;
-  background: bisque;
+  background: rgb(196, 241, 255);
   padding: 1rem 2rem;
-  border-top: 0.2rem solid rgb(85, 68, 48);
+  border-top: 0.2rem solid rgb(48, 70, 85);
   align-items: center;
   z-index: 1001;
   clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
@@ -110,7 +110,7 @@ header .search-bar-container #search-bar {
 body {
   height: 200rem;
 }
-/*-----------------Form  login Section-----------------*/
+/*-----------------Form login Section-----------------*/
 .login-form-container {
   position: fixed;
   top: -120%;
@@ -129,7 +129,6 @@ body {
   margin: 2rem;
   padding: 1.5rem 2rem;
   border-radius: 0.5rem;
-  background: bisque;
   width: 50rem;
 }
 .login-form-container form h3 {
@@ -187,7 +186,7 @@ body {
   color: var(--Primary-color);
   border: 0.1rem solid var(--Primary-color);
   border-radius: 0.5rem;
-  background: bisque;
+  background: rgb(196, 241, 255);
   font-size: 3rem;
   cursor: pointer;
   padding: 0.5rem 1.2rem;
@@ -244,8 +243,8 @@ body {
     top: 100%;
     right: 0;
     left: 0;
-    background: bisque;
-    border-top: 0.5rem solid rgb(149, 131, 108);
+    background: rgb(211, 245, 255);
+    border-top: 0.5rem solid rgb(108, 149, 146);
     padding: 1rem 2rem;
     clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
   }
@@ -257,7 +256,7 @@ body {
     border-radius: 0.5rem;
     padding: 0.1rem;
     margin: 1rem;
-    background: rgb(244, 204, 156);
+    background: rgb(168, 214, 228);
   }
  .packages .package-grid{
   display: grid;
