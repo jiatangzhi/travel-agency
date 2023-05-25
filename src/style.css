@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;700;900;1000&display=swap");
+
+:root {
+  --Primary-color: #fff;
+  --main-color: #1e90ff;
+}
+* {
+  font-family: "Nunito", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-transform: capitalize;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  transition: all 0.2s linear;
+}
+*::selection {
+  background: var(--main-color);
+  color: var(--Primary-color);
+}
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-padding-top: 6rem;
+  scroll-behavior: smooth;
+}
+section {
+  padding: 2rem 9%;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  background: var(--main-color);
+  padding: 0.8rem 3rem;
+  border: 0.2rem solid var(--main-color);
+  cursor: pointer;
+  border-radius: 0.6rem;
+  font-size: 1.7rem;
+}
+.btn:hover {
+  background: rgba(123, 189, 236, 0.816);
+  color: var(--main-color);
+}
+/*-----------------header Section-----------------*/
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: bisque;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 9%;
+}
+header .logo {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--Primary-color);
+  text-transform: uppercase;
+}
+header .logo span {
+  color: var(--main-color);
+}
+header .navbar a {
+  color: var(--Primary-color);
+  font-size: 2rem;
+  margin: 0.8rem;
+}
+header .navbar a:hover {
+  color: var(--main-color);
+  text-decoration: underline;
+}
+header .icons i {
+  font-size: 2.5rem;
+  color: var(--Primary-color);
+  cursor: pointer;
+  margin-right: 2rem;
+}
+header .icons i:hover {
+  color: var(--main-color);
+}
+header .search-bar-container {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: bisque;
+  padding: 1rem 2rem;
+  border-top: 0.2rem solid rgb(85, 68, 48);
+  align-items: center;
+  z-index: 1001;
+  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+}
+.header .search-bar-container.active {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+header .search-bar-container #search-bar {
+  width: 100%;
+  padding: 1rem;
+  text-transform: none;
+  color: #000;
+  font-size: 1.5rem;
+  border-radius: 2rem;
+}
+
+body {
+  height: 200rem;
+}
+/*-----------------Form  login Section-----------------*/
+.login-form-container {
+  position: fixed;
+  top: -120%;
+  left: 0;
+  min-height: 100vh;
+  width: 100%;
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.login-form-container.active {
+  top: 0;
+}
+.login-form-container form {
+  margin: 2rem;
+  padding: 1.5rem 2rem;
+  border-radius: 0.5rem;
+  background: bisque;
+  width: 50rem;
+}
+.login-form-container form h3 {
+  font-size: 3rem;
+  text-transform: unset;
+  color: #444;
+  text-align: center;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+}
+.login-form-container form .box {
+  width: 100%;
+  color: #333;
+  padding: 0.5rem;
+  font-size: 1.7rem;
+  border-radius: 2rem;
+  border: 0.1rem solid rgb(85, 68, 48);
+  margin: 0.6rem 0;
+  text-transform: none;
+}
+.login-form-container form .box:focus {
+  border-color: var(--main-color);
+}
+.login-form-container form #remember {
+  margin: 1rem 0;
+}
+.login-form-container form label {
+  font-size: 1.5rem;
+}
+.login-form-container form .btn {
+  display: block;
+  width: 100%;
+}
+.login-form-container form p {
+  padding: 0.5rem 0;
+  font-size: 1.5rem;
+  color: #666;
+}
+.login-form-container form p a {
+  color: var(--main-color);
+}
+.login-form-container form p a:hover {
+  color: blue;
+  text-decoration: underline;
+}
+.login-form-container #form-close {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  font-size: 5rem;
+  color: var(--Primary-color);
+  cursor: pointer;
+}
+#menu-bar {
+  color: var(--Primary-color);
+  border: 0.1rem solid var(--Primary-color);
+  border-radius: 0.5rem;
+  background: bisque;
+  font-size: 3rem;
+  cursor: pointer;
+  padding: 0.5rem 1.2rem;
+  display: none;
+}
