@@ -49,7 +49,7 @@ header {
   top: 0;
   left: 0;
   right: 0;
-  background:  rgb(196, 241, 255);
+  background: rgb(196, 241, 255);
   z-index: 1000;
   display: flex;
   align-items: center;
@@ -72,7 +72,6 @@ header .navbar a {
 }
 header .navbar a:hover {
   color: var(--main-color);
-  text-decoration: underline;
 }
 header .icons i {
   font-size: 2.5rem;
@@ -225,8 +224,7 @@ body {
     color: #000;
   }
   body {
-    background: 
-      url("/images/background.jpeg");
+    background: url("/images/background.jpeg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -258,36 +256,33 @@ body {
     margin: 1rem;
     background: rgb(168, 214, 228);
   }
- .packages .package-grid{
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 2rem;
- }
- .packages h3{
-  text-align: center;
-  font-size: 1rem;
+  .packages .package-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+  .packages h3 {
+    text-align: center;
+    font-size: 1rem;
+  }
 
-}
-
-.book .row img {
- width: 10rem;
-}
-.book .row form {
-width: 10rem;
-}
+  .book .row img {
+    width: 10rem;
+  }
+  .book .row form {
+    width: 10rem;
+  }
 }
 @media (max-width: 450px) {
   html {
     font-size: 50%;
   }
   .book .row img {
- width: 10rem;
-}
-.book .row form {
-width: 10rem;
-
-}
-
+    width: 10rem;
+  }
+  .book .row form {
+    width: 10rem;
+  }
 }
 .home {
   min-height: 100vh;
@@ -315,8 +310,8 @@ width: 10rem;
 .home .video-container {
   position: absolute;
   z-index: -1;
-  height: auto;
   width: 100%;
+  height: auto;
   object-fit: cover;
 }
 .home .controls {
@@ -366,7 +361,7 @@ width: 10rem;
   flex: 1 1 40rem;
 }
 .book .row img {
-  width: 100%; 
+  width: 100%;
   border-radius: 2rem;
 }
 .book .row form {
@@ -389,66 +384,64 @@ width: 10rem;
 .book .row form .inputbox h3 {
   font-size: 2rem;
   padding: 1rem 0;
-  }
+}
 /*-----------------Packages Section-----------------*/
-.packages .box-container{
+.packages .box-container {
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
-
-
 }
-.packages .box-container .box{
+.packages .box-container .box {
   flex: 1 1 30rem;
   border-radius: 2rem;
   overflow: hidden;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
 }
-.packages .box-container img{
- height: 25rem;
- width: 100%;
- object-fit: cover;
+.packages .box-container img {
+  height: 25rem;
+  width: 100%;
+  object-fit: cover;
 }
-.embed{
+.embed {
   width: 100%;
   height: 25rem;
 }
-.packages .box-container .box .content{
-padding: 2rem;
- background: rgb(250, 231, 209);
-text-align: center;
+.packages .box-container .box .content {
+  padding: 2rem;
+  background: rgb(226, 251, 253);
+  text-align: center;
 }
-.packages .box-container .box .content h3{
-font-size: 2rem;
+.packages .box-container .box .content h3 {
+  font-size: 2rem;
 }
-.packages .box-container .box .content h3 i{
-font-size: 2rem;
-color: var(--main-color);
+.packages .box-container .box .content h3 i {
+  font-size: 2rem;
+  color: var(--main-color);
 }
-.packages .box-container .box .content .stars i{
-font-size: 2rem;
-color: orange;
+.packages .box-container .box .content .stars i {
+  font-size: 2rem;
+  color: orange;
 }
 .packages .box-container .box .content .price {
-font-size: 2rem;
-color: #333;
-padding-top: 2rem;
+  font-size: 2rem;
+  color: #333;
+  padding-top: 2rem;
 }
 .packages .box-container .box .btn {
-margin-bottom: 2rem;
+  margin-bottom: 2rem;
 }
 .packages .box-container .box .content p {
-font-size: 2rem;
-color: #333;
+  font-size: 2rem;
+  color: #333;
 }
 
 /*gallery section starts*/
-.gallery .box-container{
+.gallery .box-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 2rem; 
+  gap: 2rem;
 }
-.gallery .box-container .box{
+.gallery .box-container .box {
   flex: 1 1 30rem;
   /* border-radius: 2rem; */
   overflow: hidden;
@@ -458,74 +451,71 @@ color: #333;
 /*footer section
 starts*/
 
-.footer{
-    background: #fff; 
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7),
-    rgba(0, 0, 0, 0.9)),
+.footer {
+  background: #fff;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)),
     url("../images/hotel-1.jpeg");
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
 
-    margin-top: 2rem;
+  margin-top: 2rem;
 }
-.footer .box-container{
-   display: grid;
-   grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr));
-   gap:  1.5rem;
+.footer .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr));
+  gap: 1.5rem;
 }
-.footer .box-container .box h3{
+.footer .box-container .box h3 {
   font-size: 2.5rem;
   color: #fff;
   padding: 1rem 0;
-   margin-bottom: 2rem;
+  margin-bottom: 2rem;
 }
-.footer .box-container .box i{
- color: var(--main-color);
+.footer .box-container .box i {
+  color: var(--main-color);
+}
+.footer .box-container .box .links {
+  display: block;
+  font-size: 1.5rem;
+  color: var(--light-color);
+  padding: 1rem 0;
+  text-decoration: none;
+  color: #fff;
+}
+.footer .box-container .box .links i {
+  color: #fff;
+  padding-right: 0.5rem;
+}
+.footer .box-container .box .links:hover i {
+  padding-right: 2rem;
+}
 
-}
-.footer .box-container .box .links{
- display: block;
- font-size: 1.5rem;
- color: var(--light-color);
- padding: 1rem 0;
- text-decoration: none;
- color: #fff;
-}
-.footer .box-container .box .links i{
-    color: #fff;
-    padding-right: .5rem;
-}
-.footer .box-container .box .links:hover i{
-    padding-right: 2rem;
-}
-
-.footer .box-container .box .social-media a{
+.footer .box-container .box .social-media a {
   height: 4rem;
   width: 4rem;
   line-height: 4rem;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   font-size: 2rem;
-  color:var(--black);
-  margin-left: .5rem;
+  color: var(--black);
+  margin-left: 0.5rem;
   text-align: center;
   background: #eee;
   padding: 2rem;
-  border-radius: 50%; 
+  border-radius: 50%;
 }
-.footer .box-container .box .social-media a:hover{
-    color:#eee;
-    background: rgb(226, 245, 255);
+.footer .box-container .box .social-media a:hover {
+  color: #eee;
+  background: rgb(226, 245, 255);
 }
-.footer .box-container .box p{
+.footer .box-container .box p {
   font-size: 2rem;
   color: #fff;
-  text-transform:none
+  text-transform: none;
 }
-.footer .box-container .box a{
+.footer .box-container .box a {
   font-size: 2rem;
-  color:var(--main-color);
+  color: var(--main-color);
 }
-.footer .box-container .box a:hover{
-   color: rgb(55, 101, 255);
-   
+.footer .box-container .box a:hover {
+  color: rgb(55, 101, 255);
 }
